@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Abstract Concept</title>
+    <link>https://jsusaki.github.io/blog/</link>
+    <description>Recent content in Blog on Abstract Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jsusaki.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quotes to Live by</title>
+      <link>https://jsusaki.github.io/blog/quotes/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/blog/quotes/</guid>
+      <description>Ralph Waldo Emerson  We ascribe beauty to that which is simple; which has no superfluous parts; which exactly answers its end; which stands related to all things; which is the mean of many extremes. It is the most enduring quality, and the most ascending quality.
+ Richard Feynman  What I cannot create, I do not understand. Know how to solve every problem that has been solved.
+ Albert Einstein  Everything should be made as simple as possible, but not simpler.</description>
+    </item>
+    
+    <item>
+      <title>Human Learning Optimization</title>
+      <link>https://jsusaki.github.io/blog/human-learning-optimization/</link>
+      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/blog/human-learning-optimization/</guid>
+      <description>Introduction In the 21st century, at the dawn of digital revolution we are living in the age of complexity. Where the dynamics of the complex systems are high dimensional, non-linear, partially observable and it&amp;rsquo;s hard to describe and model the aspects of reality at the appropriate level of abstraction, and it&amp;rsquo;s even harder to predict and anticipate the emergence and its outcome because of inherent uncertainty of the system. And yet, here we are, in the midst of information explosion and technological advancement.</description>
+    </item>
+    
+    <item>
+      <title>Cover Letter</title>
+      <link>https://jsusaki.github.io/blog/cover-letter/</link>
+      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/blog/cover-letter/</guid>
+      <description>Skeleton Cover Letter Hi there,
+I&amp;rsquo;m a Python/C/C++/whatever-is-needed engineer, and I think that COMPANY_NAME and I would go together like an optimization machine.
+Here is list of interesting things (IMO) I have done
+ I designed and implemented a complete chess engine from scratch with AI. (You can download here and play with it.) I designed and implemented a website called Abstract Concept. I taught japanese language in lectures to 16-50 years old.</description>
+    </item>
+    
+    <item>
+      <title>Hello 世界!</title>
+      <link>https://jsusaki.github.io/blog/hello-world/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/blog/hello-world/</guid>
+      <description> Hello 世界! #include &amp;lt;iostream&amp;gt;using namespace std; // Main Function int main() { cout &amp;lt;&amp;lt; &amp;#34;Hello 世界!&amp;#34; &amp;lt;&amp;lt; endl; return 0; } </description>
+    </item>
+    
+    <item>
+      <title>Mathematical Expression</title>
+      <link>https://jsusaki.github.io/blog/math-expression/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/blog/math-expression/</guid>
+      <description>Inline display $ \sqrt{3x-1}+(1+x)^2 $
+Equation display $$ \begin{equation} x(t) = e^{\int_{t_0}^tp(s)ds}\Bigg(\int_{t_0}^t\Big(q(s)e^{-\int_{t_0}^sp(\tau)d\tau}\Big)ds + x_0\Bigg). \end{equation} $$</description>
+    </item>
+    
+  </channel>
+</rss>

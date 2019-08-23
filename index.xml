@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abstract Concept</title>
+    <link>https://jsusaki.github.io/</link>
+    <description>Recent content on Abstract Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Jul 2018 11:32:40 +0900</lastBuildDate>
+    
+	<atom:link href="https://jsusaki.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Home</title>
+      <link>https://jsusaki.github.io/home/home/</link>
+      <pubDate>Sun, 08 Jul 2018 11:32:40 +0900</pubDate>
+      
+      <guid>https://jsusaki.github.io/home/home/</guid>
+      <description> Projects Blog About Contact  </description>
+    </item>
+    
+    <item>
+      <title>Simple Neural Network</title>
+      <link>https://jsusaki.github.io/projects/simple-neural-network/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/projects/simple-neural-network/</guid>
+      <description>Introduction This is a simple neural network to solve classic non-linear XOR (exclusive) problem.
+Problem XOR problem is a classic non-linear classification problem where you take 2 binary inputs and output either 0 or 1 depending on the combination of input. Here, we want to output the correct classification of XOR where:
+   Input 1 Input 2 Output     0 0 0   0 1 1   1 0 1   1 1 0    Input Matrix X    Input 1 Input 2     0 0   0 1   1 0   1 1    Output Matrix y    Output     0   1   1   0    Solution To solve XOR classification problem, we will use the neural network algorithm which is universal non-linear function approximator to correctly classify the XOR output.</description>
+    </item>
+    
+    <item>
+      <title>Simple Matrix Library</title>
+      <link>https://jsusaki.github.io/projects/simple-matrix-library/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/projects/simple-matrix-library/</guid>
+      <description>Introduction This is a simple matrix library for numerical optimizations, 2D and 3D applications. It only supports floating point number for now.
+Features  Light-Weight Efficient Flexible Extensible  Architecture  Matrix class  Components  Matrix Addition Matrix Subtraction Matrix Multiplication  Element-Wise Multiplication (Hadamard Product) Matrix-Vector Matrix-Matrix  Matrix Division Transpose Inverse Identity Trace  Future Update Transform into template class to support multiple data formats.
+Download Simple Matrix Library</description>
+    </item>
+    
+    <item>
+      <title>Simple Chess Engine</title>
+      <link>https://jsusaki.github.io/projects/simple-chess-engine/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/projects/simple-chess-engine/</guid>
+      <description>Introduction This is a simple implementation of a chess program with minimax algorithm and alpha-beta pruning.
+Namely, chess engine at its core.
+Features  Complete Chess Game ASCII Interface Evaluation Function Artificial Intelligence  Minimax Algorithm Alpha-beta Pruning   Architecture  Board Representation Move Generation Move Search Move Evaluation  Components Board Representation  Board class Piece class Square class Move class Move List class  Move Generation Function Board class routine - GenerateMoves(MoveList &amp;amp;moves)</description>
+    </item>
+    
+    <item>
+      <title>Quotes to Live by</title>
+      <link>https://jsusaki.github.io/blog/quotes/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/blog/quotes/</guid>
+      <description>Ralph Waldo Emerson  We ascribe beauty to that which is simple; which has no superfluous parts; which exactly answers its end; which stands related to all things; which is the mean of many extremes. It is the most enduring quality, and the most ascending quality.
+ Richard Feynman  What I cannot create, I do not understand. Know how to solve every problem that has been solved.
+ Albert Einstein  Everything should be made as simple as possible, but not simpler.</description>
+    </item>
+    
+    <item>
+      <title>Human Learning Optimization</title>
+      <link>https://jsusaki.github.io/blog/human-learning-optimization/</link>
+      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/blog/human-learning-optimization/</guid>
+      <description>Introduction In the 21st century, at the dawn of digital revolution we are living in the age of complexity. Where the dynamics of the complex systems are high dimensional, non-linear, partially observable and it&amp;rsquo;s hard to describe and model the aspects of reality at the appropriate level of abstraction, and it&amp;rsquo;s even harder to predict and anticipate the emergence and its outcome because of inherent uncertainty of the system. And yet, here we are, in the midst of information explosion and technological advancement.</description>
+    </item>
+    
+    <item>
+      <title>Cover Letter</title>
+      <link>https://jsusaki.github.io/blog/cover-letter/</link>
+      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/blog/cover-letter/</guid>
+      <description>Skeleton Cover Letter Hi there,
+I&amp;rsquo;m a Python/C/C++/whatever-is-needed engineer, and I think that COMPANY_NAME and I would go together like an optimization machine.
+Here is list of interesting things (IMO) I have done
+ I designed and implemented a complete chess engine from scratch with AI. (You can download here and play with it.) I designed and implemented a website called Abstract Concept. I taught japanese language in lectures to 16-50 years old.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://jsusaki.github.io/about/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/about/</guid>
+      <description>About me Hi there! If you have come this far, then probably you want to know more about me for whatever reason.
+My name is Jun-Ichi Susaki. I&amp;rsquo;m a programmer with broad interest.
+I&amp;rsquo;m interested in complex systems, primarily focusing on the intersection of Computer Science and Neuroscience/Biology.
+I find it fascinating the fact that from simple things emerges extremely sophisticated and complex things.
+I like to learn new things by doing R&amp;amp;D.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://jsusaki.github.io/contact/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/contact/</guid>
+      <description>j1susaki {at} gmail.com You can reach me here and I&amp;rsquo;ll try to return your message within 24 hours.</description>
+    </item>
+    
+    <item>
+      <title>Hello 世界!</title>
+      <link>https://jsusaki.github.io/blog/hello-world/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/blog/hello-world/</guid>
+      <description> Hello 世界! #include &amp;lt;iostream&amp;gt;using namespace std; // Main Function int main() { cout &amp;lt;&amp;lt; &amp;#34;Hello 世界!&amp;#34; &amp;lt;&amp;lt; endl; return 0; } </description>
+    </item>
+    
+    <item>
+      <title>Mathematical Expression</title>
+      <link>https://jsusaki.github.io/blog/math-expression/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/blog/math-expression/</guid>
+      <description>Inline display $ \sqrt{3x-1}+(1+x)^2 $
+Equation display $$ \begin{equation} x(t) = e^{\int_{t_0}^tp(s)ds}\Bigg(\int_{t_0}^t\Big(q(s)e^{-\int_{t_0}^sp(\tau)d\tau}\Big)ds + x_0\Bigg). \end{equation} $$</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Abstract Concept</title>
+    <link>https://jsusaki.github.io/projects/</link>
+    <description>Recent content in Projects on Abstract Concept</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jsusaki.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Simple Neural Network</title>
+      <link>https://jsusaki.github.io/projects/simple-neural-network/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/projects/simple-neural-network/</guid>
+      <description>Introduction This is a simple neural network to solve classic non-linear XOR (exclusive) problem.
+Problem XOR problem is a classic non-linear classification problem where you take 2 binary inputs and output either 0 or 1 depending on the combination of input. Here, we want to output the correct classification of XOR where:
+   Input 1 Input 2 Output     0 0 0   0 1 1   1 0 1   1 1 0    Input Matrix X    Input 1 Input 2     0 0   0 1   1 0   1 1    Output Matrix y    Output     0   1   1   0    Solution To solve XOR classification problem, we will use the neural network algorithm which is universal non-linear function approximator to correctly classify the XOR output.</description>
+    </item>
+    
+    <item>
+      <title>Simple Matrix Library</title>
+      <link>https://jsusaki.github.io/projects/simple-matrix-library/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/projects/simple-matrix-library/</guid>
+      <description>Introduction This is a simple matrix library for numerical optimizations, 2D and 3D applications. It only supports floating point number for now.
+Features  Light-Weight Efficient Flexible Extensible  Architecture  Matrix class  Components  Matrix Addition Matrix Subtraction Matrix Multiplication  Element-Wise Multiplication (Hadamard Product) Matrix-Vector Matrix-Matrix  Matrix Division Transpose Inverse Identity Trace  Future Update Transform into template class to support multiple data formats.
+Download Simple Matrix Library</description>
+    </item>
+    
+    <item>
+      <title>Simple Chess Engine</title>
+      <link>https://jsusaki.github.io/projects/simple-chess-engine/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jsusaki.github.io/projects/simple-chess-engine/</guid>
+      <description>Introduction This is a simple implementation of a chess program with minimax algorithm and alpha-beta pruning.
+Namely, chess engine at its core.
+Features  Complete Chess Game ASCII Interface Evaluation Function Artificial Intelligence  Minimax Algorithm Alpha-beta Pruning   Architecture  Board Representation Move Generation Move Search Move Evaluation  Components Board Representation  Board class Piece class Square class Move class Move List class  Move Generation Function Board class routine - GenerateMoves(MoveList &amp;amp;moves)</description>
+    </item>
+    
+  </channel>
+</rss>

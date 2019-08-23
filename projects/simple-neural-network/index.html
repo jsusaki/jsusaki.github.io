@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>
+    Simple Neural Network | Abstract Concept
+</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="femto">
+    <meta name="description" content="femto&#39;s abstractions">
+    <meta name="keywords" content="mind, brain, machine, computer">
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://jsusaki.github.io"/>
+
+<meta name="twitter:title" content="Simple Neural Network"/>
+<meta name="twitter:description" content="Introduction This is a simple neural network to solve classic non-linear XOR (exclusive) problem.
+Problem XOR problem is a classic non-linear classification problem where you take 2 binary inputs and output either 0 or 1 depending on the combination of input. Here, we want to output the correct classification of XOR where:
+   Input 1 Input 2 Output     0 0 0   0 1 1   1 0 1   1 1 0    Input Matrix X    Input 1 Input 2     0 0   0 1   1 0   1 1    Output Matrix y    Output     0   1   1   0    Solution To solve XOR classification problem, we will use the neural network algorithm which is universal non-linear function approximator to correctly classify the XOR output."/>
+
+    <meta property="og:title" content="Simple Neural Network" />
+<meta property="og:description" content="Introduction This is a simple neural network to solve classic non-linear XOR (exclusive) problem.
+Problem XOR problem is a classic non-linear classification problem where you take 2 binary inputs and output either 0 or 1 depending on the combination of input. Here, we want to output the correct classification of XOR where:
+   Input 1 Input 2 Output     0 0 0   0 1 1   1 0 1   1 1 0    Input Matrix X    Input 1 Input 2     0 0   0 1   1 0   1 1    Output Matrix y    Output     0   1   1   0    Solution To solve XOR classification problem, we will use the neural network algorithm which is universal non-linear function approximator to correctly classify the XOR output." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jsusaki.github.io/projects/simple-neural-network/" />
+
+<meta property="og:image" content="https://jsusaki.github.io" />
+<meta property="article:published_time" content="2019-04-25T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-04-25T00:00:00&#43;00:00"/>
+
+<link rel="canonical" href="https://jsusaki.github.io/projects/simple-neural-network/">
+<link rel="icon" type="image/png" href="https://jsusaki.github.io/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://jsusaki.github.io/img/favicon-16x16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="https://jsusaki.github.io/img/apple-touch-icon.png" sizes="180x180">
+
+<meta name="generator" content="Hugo 0.54.0" />
+    <link rel="stylesheet" media="all" href="https://jsusaki.github.io/css/common.css">
+<link rel="stylesheet" media="all" href="https://jsusaki.github.io/css/syntax.css">
+    <script type="text/javascript" src="js/libs/three/three.js"></script>
+<script type="text/javascript" src="js/libs/three/controls/TrackballControls.js"></script>
+<script type="text/javascript" src="js/libs/other/Tween.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</head>
+<body>
+    <section id="WebGL-output"></section>
+<script type="text/javascript">(function () { init(); })();</script>
+    <main id="main">
+
+        
+    <link rel="stylesheet" media="all" href="https://jsusaki.github.io/css/header.css">
+<header id="header">
+    <a href="https://jsusaki.github.io" class="title">Abstract Concept</a>
+    <nav class="navigation">
+        <ul class="menu">
+            
+            <li class="menu__item"><a href="https://jsusaki.github.io/">Home</a></li>
+            
+            <li class="menu__item"><a href="https://jsusaki.github.io/projects/">Projects</a></li>
+            
+            <li class="menu__item"><a href="https://jsusaki.github.io/blog/">Blog</a></li>
+            
+            <li class="menu__item"><a href="https://jsusaki.github.io/about/">About</a></li>
+            
+            <li class="menu__item"><a href="https://jsusaki.github.io/contact/">Contact</a></li>
+            
+        </ul>
+    </nav>
+</header>
+    <link rel="stylesheet" media="all" href="https://jsusaki.github.io/css/page.css">
+<div id="contentInner">
+    <article class="page page--">
+        <header class="page__title">
+            <h1>Simple Neural Network</h1>
+        </header>
+            <link rel="stylesheet" media="all" href="https://jsusaki.github.io/css/toc.css">
+
+<div class="toc">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#problem">Problem</a>
+<ul>
+<li><a href="#input-matrix-x">Input Matrix X</a></li>
+<li><a href="#output-matrix-y">Output Matrix y</a></li>
+</ul></li>
+<li><a href="#solution">Solution</a></li>
+<li><a href="#architecture">Architecture</a>
+<ul>
+<li><a href="#input-layer">Input Layer</a></li>
+<li><a href="#hidden-layer">Hidden Layer</a></li>
+<li><a href="#output-layer">Output Layer</a></li>
+</ul></li>
+<li><a href="#components">Components</a>
+<ul>
+<li><a href="#feedforward">Feedforward</a>
+<ul>
+<li><a href="#activation-function">Activation Function</a></li>
+<li><a href="#loss-function">Loss Function</a></li>
+</ul></li>
+<li><a href="#backpropagation">Backpropagation</a>
+<ul>
+<li><a href="#optimization-algorithm">Optimization Algorithm</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#future-update">Future Update</a></li>
+<li><a href="#download">Download</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+
+        <section class="page__content">
+            
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This is a simple neural network to solve classic non-linear XOR (exclusive) problem.</p>
+
+<h2 id="problem">Problem</h2>
+
+<p>XOR problem is a classic non-linear classification problem where you take 2 binary inputs and output either 0 or 1 depending on the combination of input.
+Here, we want to output the correct classification of XOR where:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Input 1</th>
+<th align="center">Input 2</th>
+<th align="center">Output</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="input-matrix-x">Input Matrix X</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Input 1</th>
+<th align="center">Input 2</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="output-matrix-y">Output Matrix y</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Output</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">0</td>
+</tr>
+
+<tr>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="solution">Solution</h2>
+
+<p>To solve XOR classification problem, we will use the neural network algorithm which is universal non-linear function approximator to correctly classify the XOR output.
+We will implement the simplest architecture to solve this problem.</p>
+
+<h2 id="architecture">Architecture</h2>
+
+<h3 id="input-layer">Input Layer</h3>
+
+<p>2 input neurons</p>
+
+<h3 id="hidden-layer">Hidden Layer</h3>
+
+<p>2 hidden neurons</p>
+
+<h3 id="output-layer">Output Layer</h3>
+
+<p>1 output neuron</p>
+
+<h2 id="components">Components</h2>
+
+<h3 id="feedforward">Feedforward</h3>
+
+<h4 id="activation-function">Activation Function</h4>
+
+<ul>
+<li>Sigmoid Function s(x) = 1 / 1 + e^-x</li>
+</ul>
+
+<h4 id="loss-function">Loss Function</h4>
+
+<ul>
+<li>Squared Error E = truth - prediction</li>
+</ul>
+
+<h3 id="backpropagation">Backpropagation</h3>
+
+<h4 id="optimization-algorithm">Optimization Algorithm</h4>
+
+<ul>
+<li>Gradient Descent W += Delta</li>
+</ul>
+
+<h2 id="future-update">Future Update</h2>
+
+<ul>
+<li>Create a tutorial explaining underlying mathematical concepts, algorithms and code.</li>
+<li>Design and implement OOP neural network.</li>
+<li>Design Neural Network to solve Image Classification Problem</li>
+</ul>
+
+<h2 id="download">Download</h2>
+
+<p><a href="https://github.com/jsusaki/snn">Simple Neural Network</a></p>
+
+<h2 id="resources">Resources</h2>
+
+<p><a href="http://neuralnetworksanddeeplearning.com/">Neural Networks and Deep Learning</a></p>
+
+<p><a href="http://iamtrask.github.io/2015/07/12/basic-python-network/">A Neural Network in 11 lines of Python</a></p>
+
+<p><a href="http://karpathy.github.io/neuralnets/">Hacker&rsquo;s guide to Neural Networks</a></p>
+
+<p><a href="https://www.deeplearningbook.org/">Deep Learning Book</a></p>
+
+        </section>
+
+    </article>
+</div>
+
+    </main>
+</body>
+</html>
